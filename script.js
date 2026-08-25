@@ -2,7 +2,7 @@ function loginWithDiscord() {
     const clientId = "1541759993437487134";
 
     const redirectUri =
-        "http://localhost:3000/auth/discord/callback";
+        "https://discord.com/oauth2/authorize?client_id=1541759993437487134&response_type=code&redirect_uri=https%3A%2F%2Fipjrushromania.github.io%2Fmairush%2F%2Fauth%2Fdiscord%2Fcallback&scope=identify+email+guilds+guilds.members.read";
 
     const scope = "identify email guilds";
 
