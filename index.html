@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUB MAI — Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">⚖</div>
+      <span>HUB <b>MAI</b></span>
+    </div>
+
+    <div class="search">
+      <span>⌕</span>
+      <input type="text" placeholder="Caută membri, regulament, dosare...">
+    </div>
+
+    <div class="top-actions">
+      <button class="bell">♧<i>8</i></button>
+      <button class="discord-login" onclick="loginWithDiscord()">
+        <span class="discord-icon">♣</span>
+        <span>AUTENTIFICARE</span>
+      </button>
+      <button class="command">▦ &nbsp; CENTRU DE COMANDĂ</button>
+    </div>
+  </header>
+
+  <main class="hero">
+    <section class="side police">
+
+      <div class="background-mark">MAI</div>
+
+      <div class="content">
+        <div class="emblem police-emblem">★</div>
+        <h1>POLIȚIA <span>ROMÂNĂ</span></h1>
+        <p>Menține ordinea publică, protejează cetățenii și asigură<br>
+           respectarea legii.</p>
+
+        <button class="apply blue" onclick="showMessage('Ai selectat aplicația pentru Poliție.')">
+          APLICĂ ÎN POLIȚIE
+        </button>
+
+        <button class="guide blue-outline" onclick="showMessage('Ghid Poliție deschis.')">
+          <span>⚔</span>
+          <div><b>GHID POLIȚIE</b><small>Proceduri tactice și ghiduri</small></div>
+          <strong>›</strong>
+        </button>
+      </div>
+    </section>
+
+    <div class="center-login">
+      <div class="diamond">
+        <div class="diamond-inner">
+          <div class="scales">⚖</div>
+          <b>MAI</b>
+          <span>INTRĂ ÎN CONT</span>
+          <small>●</small>
+        </div>
+      </div>
+    </div>
+
+    <section class="side dicot">
+
+      <div class="background-mark">DII</div>
+
+      <div class="content">
+        <div class="emblem dicot-emblem">◉</div>
+        <h1>DIICOT</h1>
+        <p>Combaterea criminalității organizate, a traficului de<br>
+           droguri și a infracțiunilor grave.</p>
+
+        <button class="apply gold" onclick="showMessage('Ai selectat aplicația pentru DIICOT.')">
+          APLICĂ ÎN DIICOT
+        </button>
+
+        <button class="guide gold-outline" onclick="showMessage('Ghid DIICOT deschis.')">
+          <span>◉</span>
+          <div><b>GHID DIICOT</b><small>Proceduri speciale și ghiduri</small></div>
+          <strong>›</strong>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
