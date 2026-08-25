@@ -2,7 +2,7 @@ function loginWithDiscord() {
     const clientId = "1541759993437487134";
 
     const redirectUri =
-        "https://discord.com/oauth2/authorize?client_id=1541759993437487134&response_type=code&redirect_uri=https%3A%2F%2Fipjrushromania.github.io%2Fcentrudecomanda%2Fauth%2Fdiscord%2Fcallback&scope=identify+email+guilds+guilds.members.read";
+        "https://discord.com/oauth2/authorize?client_id=1541759993437487134&response_type=code&redirect_uri=https%3A%2F%2Fipjrushromania.github.io%2Fcentrudecomanda%2Fauth%2Fdiscord%2Fcallback&scope=identify+guilds.members.read";
 
     const scope = "identify email guilds";
 
@@ -17,14 +17,14 @@ function loginWithDiscord() {
 }
 
 function loginWithDiscord() {
-    window.location.href = "https://discord.com/oauth2/authorize?client_id=1541759993437487134&response_type=code&redirect_uri=https%3A%2F%2Fipjrushromania.github.io%2Fcentrudecomanda%2Fauth%2Fdiscord%2Fcallback&scope=identify+email+guilds+guilds.members.read+guilds.join";
+    window.location.href = "https://discord.com/oauth2/authorize?client_id=1541759993437487134&response_type=code&redirect_uri=https%3A%2F%2Fipjrushromania.github.io%2Fcentrudecomanda%2Fauth%2Fdiscord%2Fcallback&scope=identify+guilds.members.read";
 }
 /*
     CONFIGURAȚIE
 */
 
 // ADRESA CLOUDFLARE WORKER-ULUI
-const AUTH_SERVER = "https://discord.com/oauth2/authorize?client_id=1541759993437487134&response_type=code&redirect_uri=https%3A%2F%2Fipjrushromania.github.io%2Fcentrudecomanda%2Fauth%2Fdiscord%2Fcallback&scope=identify+email+guilds+guilds.members.read+guilds.join";
+const AUTH_SERVER = "https://discord.com/oauth2/authorize?client_id=1541759993437487134&response_type=code&redirect_uri=https%3A%2F%2Fipjrushromania.github.io%2Fcentrudecomanda%2Fauth%2Fdiscord%2Fcallback&scope=identify+guilds.members.read";
 
 // CENTRUL DE COMANDĂ
 const COMMAND_CENTER =
