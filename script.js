@@ -15,3 +15,7 @@ function loginWithDiscord() {
 
     window.location.href = url;
 }
+
+function loginWithDiscord() {
+    window.location.href = "URL_BACKEND/auth/discord";
+}
